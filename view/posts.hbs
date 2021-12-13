@@ -8,13 +8,32 @@
 </head>
 
 <body>
-    <h1>Posts</h1> 
+    
+        <h1>Posts</h1> 
+    <form action="posts" method="post" accept-charset="utf-8">  
+        <label for="content">Conteúdo</label>  
+        <input type="text" name = "content" value=""/>            
+        <input type="submit"  value="Adicionar &rarr;"/>
+
+    </form>    
+
+    <form action="posts" method="get" accept-charset="utf-8">  
+        <label for="busca">Busca</label>
+        <input type="text" name = "busca" value=""/>
+        <input type="submit"  value="busca....">
+
+    </form>     
+
+
     <ul>
         {{#posts}}
          <li>{{content}}</li>
         {{/posts}}
     </ul>  
 
+
+
+    
 </body>
 
 </html>
