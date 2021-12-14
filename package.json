@@ -1,0 +1,17 @@
+{
+  "name": "netflixweb3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "dev:debug": "nodemon --inspect index.js",
+    "start": "node node_modules/nodemon/bin/nodemon.js index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.2.0",
+    "mongodb": "^4.2.2",
+    "nodemon": "^2.0.15"
+  }
+}
